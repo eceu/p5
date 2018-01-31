@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="playground.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="buddy.js"></script>
+    <script src="target.js"></script>
+    <script src="snake.js"></script>
+    
+  </head>
+  <body>
+
+      <div id="snake" style="background-color: black ;border:20px solid black;text-align: center"></div>
+
+      <script>
+        Snake.params = {
+          playgroundWidth: 1500,
+          playgroundHeigth: 800,
+          //snakeSize: 20,
+          //scoreboardHeigth: 50,
+          frameRate: 10,
+        };
+      new p5(Snake, "snake");
+      </script>
+  </body>
+</html>
